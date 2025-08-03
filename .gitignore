@@ -4,4 +4,4 @@ instance/
 .env
 database/*.db
 *.sqlite
-*.sqlite3
+*.sqlite3.env
