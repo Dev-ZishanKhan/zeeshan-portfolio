@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zeeshan Khan | Portfolio</title>
+  <meta name="keywords" content="Zeeshan Khan, Portfolio, Full Stack Developer, AI Developer, Python, AWS, Machine Learning, Java, React">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+<body class="dark-mode">
+  <!-- Animated Background -->
+  <div class="animated-bg">
+    <div class="bg-blob bg-blob-1"></div>
+    <div class="bg-blob bg-blob-2"></div>
+    <div class="bg-blob bg-blob-3"></div>
+  </div>
+  <!-- Particle Background -->
+  <div id="particles-js"></div>
+  <!-- Loader -->
+  <div id="loader">
+    <div class="spinner"></div>
+    <p>Loading portfolio...</p>
+  </div>
+  <!-- Navbar -->
+  <nav class="navbar glass-effect" id="navbar">
+    <div class="logo">Zeeshan Khan</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#timeline">Timeline</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger"><i class="fas fa-bars"></i></div>
+  </nav>
+  <!-- Hero -->
+  <header class="hero">
+    <h1>Hi, I'm <span class="highlight gradient-text neon-glow">Zeeshan Khan</span></h1>
+    <p><span id="typed-text">Full-Stack Web Developer | AI Enthusiast</span><span class="cursor">|</span></p>
+  </header>
+  <main class="container">
+    <!-- About -->
+    <section id="about" data-aos="fade-up">
+      <div class="glass-card">
+        <h2>About Me</h2>
+        <p>Aspiring Full Stack Web Developer with hands-on experience in building modern, responsive apps. Skilled in HTML, CSS, JavaScript, React, Node.js, Java, Python, MySQL, and MongoDB. Focused on writing clean code, optimizing performance, and staying up-to-date with emerging web technologies.</p>
+      </div>
+    </section>
+    <!-- Skills -->
+    <section id="skills" data-aos="fade-up">
+      <div class="glass-card">
+        <h2>Skills</h2>
+        <div class="skills-wrapper">
+          <div class="skills-container">
+            <div class="skill-item" data-aos="zoom-in" data-aos-delay="100">
+              <i class="fab fa-python"></i>
+              <span>Python</span>
+            </div>
+            <div class="skill-item" data-aos="zoom-in" data-aos-delay="200">
+              <i class="fab fa-java"></i>
+              <span>Java</span>
+            </div>
+            <div class="skill-item" data-aos="zoom-in" data-aos-delay="300">
+              <i class="fab fa-html5"></i>
+              <span>HTML5</span>
+            </div>
+            <div class="skill-item" data-aos="zoom-in" data-aos-delay="400">
+              <i class="fab fa-css3-alt"></i>
+              <span>CSS3</span>
+            </div>
+            <div class="skill-item" data-aos="zoom-in" data-aos-delay="500">
+              <i class="fab fa-js-square"></i>
+              <span>JavaScript</span>
+            </div>
+            <div class="skill-item" data-aos="zoom-in" data-aos-delay="600">
+              <i class="fab fa-react"></i>
+              <span>React</span>
+            </div>
+            <div class="skill-item" data-aos="zoom-in" data-aos-delay="700">
+              <i class="fas fa-database"></i>
+              <span>MySQL</span>
+            </div>
+            <div class="skill-item" data-aos="zoom-in" data-aos-delay="800">
+              <i class="fas fa-database"></i>
+              <span>MongoDB</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Projects -->
+    <section id="projects" data-aos="fade-up">
+      <div class="glass-card">
+        <h2>Projects</h2>
+        <div class="filters">
+          <button class="filter active" data-tech="all" type="button">All</button>
+          <button class="filter" data-tech="web" type="button">Web</button>
+          <button class="filter" data-tech="python" type="button">Python</button>
+          <button class="filter" data-tech="java" type="button">Java</button>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card tilt-card" data-tech="java" data-aos="fade-up" data-aos-delay="100">
+            <h3>Car Rental Management System</h3>
+            <div class="tech-badges">
+              <span>Java</span>
+              <span>GUI</span>
+              <span>MySQL</span>
+            </div>
+            <p>Java-based GUI app for managing vehicle bookings and customers.</p>
+            <a href="https://github.com/Dev-ZishanKhan/Car-Rental-System-GUI" target="_blank" rel="noopener">View on GitHub</a>
+          </div>
+          <div class="project-card tilt-card" data-tech="web" data-aos="fade-up" data-aos-delay="200">
+            <h3>Clothing AI Chatbot</h3>
+            <div class="tech-badges">
+              <span>Python</span>
+              <span>Flask</span>
+              <span>HTML/CSS</span>
+              <span>AI</span>
+            </div>
+            <p>Fashion chatbot using Python, Flask & ML for e-commerce.</p>
+            <a href="https://github.com/Dev-ZishanKhan/Clothing-Chatbot" target="_blank" rel="noopener">Try Now</a>
+          </div>
+          <div class="project-card tilt-card" data-tech="python" data-aos="fade-up" data-aos-delay="300">
+            <h3>Password Generator</h3>
+            <div class="tech-badges">
+              <span>Python</span>
+              <span>Tkinter</span>
+              <span>Security</span>
+            </div>
+            <p>Python GUI app for secure password creation.</p>
+            <a href="https://github.com/Dev-ZishanKhan/Password-Generator" target="_blank" rel="noopener">View Project</a>
+          </div>
+          <div class="project-card tilt-card" data-tech="python" data-aos="fade-up" data-aos-delay="400">
+            <h3>Emoji Responder</h3>
+            <div class="tech-badges">
+              <span>Python</span>
+              <span>Desktop</span>
+              <span>Fun Project</span>
+            </div>
+            <p>Desktop tool that responds with emoji reactions.</p>
+            <a href="#" target="_blank">View</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Blog Section -->
+    <section id="blog" data-aos="fade-up">
+      <div class="glass-card">
+        <h2>Latest Articles</h2>
+        <div class="blog-grid">
+          <article class="blog-post" data-aos="fade-up" data-aos-delay="100">
+            <div class="blog-image">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=500&q=80" alt="Machine Learning">
+            </div>
+            <div class="blog-content">
+              <h3>Getting Started with Machine Learning</h3>
+              <p class="blog-excerpt">A comprehensive guide to ML fundamentals and practical applications in modern web development.</p>
+              <div class="blog-meta">
+                <span class="blog-date"><i class="far fa-calendar"></i> May 15, 2023</span>
+                <span class="blog-read-time"><i class="far fa-clock"></i> 5 min read</span>
+              </div>
+              <a href="#" class="read-more">Read More</a>
+            </div>
+          </article>
+          <article class="blog-post" data-aos="fade-up" data-aos-delay="200">
+            <div class="blog-image">
+              <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=500&q=80" alt="React Development">
+            </div>
+            <div class="blog-content">
+              <h3>React Best Practices in 2023</h3>
+              <p class="blog-excerpt">Essential patterns and techniques for building scalable React applications.</p>
+              <div class="blog-meta">
+                <span class="blog-date"><i class="far fa-calendar"></i> April 28, 2023</span>
+                <span class="blog-read-time"><i class="far fa-clock"></i> 8 min read</span>
+              </div>
+              <a href="#" class="read-more">Read More</a>
+            </div>
+          </article>
+          <article class="blog-post" data-aos="fade-up" data-aos-delay="300">
+            <div class="blog-image">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=500&q=80" alt="Python Programming">
+            </div>
+            <div class="blog-content">
+              <h3>Python for Web Development</h3>
+              <p class="blog-excerpt">How to leverage Python's ecosystem for building powerful web applications.</p>
+              <div class="blog-meta">
+                <span class="blog-date"><i class="far fa-calendar"></i> April 10, 2023</span>
+                <span class="blog-read-time"><i class="far fa-clock"></i> 6 min read</span>
+              </div>
+              <a href="#" class="read-more">Read More</a>
+            </div>
+          </article>
+        </div>
+        <div class="blog-view-all">
+          <a href="#" class="view-all-btn">View All Articles</a>
+        </div>
+      </div>
+    </section>
+    <!-- Timeline -->
+    <section id="timeline" data-aos="fade-up">
+      <div class="glass-card">
+        <h2>My Journey</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h3>Java Intern</h3>
+              <p>HighTech House, Islamabad</p>
+              <span>Aug 2024 - Oct 2024</span>
+              <ul>
+                <li>Built Java desktop apps using OOP</li>
+                <li>Designed UIs with Swing</li>
+                <li>Integrated MySQL database</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h3>Bachelor's in AI</h3>
+              <p>Barani Institute of Information Technology</p>
+              <span>Feb 2024 - Present</span>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h3>Intermediate in CS</h3>
+              <p>Bahria College, Islamabad</p>
+              <span>Mar 2021 - Apr 2023</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Experience -->
+    <section id="experience" data-aos="fade-up">
+      <div class="glass-card">
+        <h2>Experience</h2>
+        <p><strong>Java Intern – HighTech House, Islamabad</strong><br>Aug 2024 – Oct 2024</p>
+        <ul>
+          <li>Built Java desktop apps using OOP</li>
+          <li>Designed UIs with Swing</li>
+          <li>Integrated MySQL database</li>
+          <li>Collaborated on code reviews & debugging</li>
+          <li>Version control & Agile practices</li>
+        </ul>
+      </div>
+    </section>
+    <!-- Education -->
+    <section id="education" data-aos="fade-up">
+      <div class="glass-card">
+        <h2>Education</h2>
+        <p><strong>Bachelor's in Artificial Intelligence</strong><br>Barani Institute of Information Technology<br>Feb 2024 – Present</p>
+        <p><strong>Intermediate in Computer Science</strong><br>Bahria College, Islamabad<br>Mar 2021 – Apr 2023</p>
+      </div>
+    </section>
+    <!-- Certificates -->
+    <section id="certificates" data-aos="fade-up">
+      <div class="glass-card">
+        <h2>Certificates</h2>
+        <div class="certificates-grid">
+          <div class="certificate-card" data-aos="fade-up" data-aos-delay="100">
+            <i class="fas fa-certificate"></i>
+            <div>
+              <h3>Generative AI</h3>
+              <p>Simplilearn · 2025</p>
+              <p class="cert-desc">✅ Completed course on Generative AI, covering key concepts and applications.</p>
+              <a href="{{ url_for('static', filename='images/Gen AI.png') }}" target="_blank" class="certificate-download-btn">View Certificate</a>
+            </div>
+          </div>
+          <div class="certificate-card" data-aos="fade-up" data-aos-delay="200">
+            <i class="fas fa-certificate"></i>
+            <div>
+              <h3>Fundamentals of Machine Learning & AI</h3>
+              <p>AWS Academy · 2025</p>
+              <p class="cert-desc">✅ Covered core ML/AI concepts and AWS tools like SageMaker, with hands-on learning.</p>
+              <a href="{{ url_for('static', filename='images/Aws Certificate.png') }}" target="_blank" class="certificate-download-btn">View Certificate</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Life Philosophy -->
+    <section id="philosophy" data-aos="fade-up">
+      <div class="glass-card">
+        <h2>My Life Philosophy</h2>
+        <blockquote>“Code with purpose. Debug with patience. Build with passion.”</blockquote>
+      </div>
+    </section>
+    <!-- Contact -->
+    <section id="contact" data-aos="fade-up">
+      <div class="glass-card">
+        <h2>Contact Me</h2>
+        <form id="contact-form" novalidate>
+          <div class="form-group">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <span class="error-message">Please enter your name</span>
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" placeholder="Your Email" required />
+            <span class="error-message">Please enter a valid email</span>
+          </div>
+          <div class="form-group">
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <span class="error-message">Please enter your message</span>
+          </div>
+          <button type="submit" class="submit-btn">Send Message</button>
+          <p id="form-status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer>
+    <p>📧 zishancoderrx@gmail.com | 📍 Soan Garden, Islamabad</p>
+    <p>🌐 <a href="https://linktr.ee/iazishan" target="_blank" rel="noopener">linktr.ee/iazishan</a> | 💼 <a href="https://linkedin.com/in/zeeshan-khan-048483370" target="_blank" rel="noopener">LinkedIn</a> | 👨‍💻 <a href="https://github.com/Dev-ZishanKhan" target="_blank" rel="noopener">GitHub</a></p>
+    <p>&copy; <span id="year"></span> Zeeshan Khan. All rights reserved.</p>
+    
+    <!-- Resume Button - Small and at the end -->
+    <div class="footer-resume">
+      <a href="{{ url_for('static', filename='images/Zeeshan Khan Resume.pdf') }}" download class="resume-btn-small">
+        <i class="fas fa-download"></i> Resume
+      </a>
+    </div>
+  </footer>
+  <!-- Mobile Navigation -->
+  <div class="mobile-nav">
+    <a href="#about" class="mobile-nav-item">
+      <i class="fas fa-user"></i>
+      <span>About</span>
+    </a>
+    <a href="#skills" class="mobile-nav-item">
+      <i class="fas fa-code"></i>
+      <span>Skills</span>
+    </a>
+    <a href="#projects" class="mobile-nav-item">
+      <i class="fas fa-folder"></i>
+      <span>Projects</span>
+    </a>
+    <a href="#contact" class="mobile-nav-item">
+      <i class="fas fa-envelope"></i>
+      <span>Contact</span>
+    </a>
+  </div>
+  <!-- Back to Top -->
+  <button id="backToTop" title="Back to Top" type="button"><i class="fas fa-arrow-up"></i></button>
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

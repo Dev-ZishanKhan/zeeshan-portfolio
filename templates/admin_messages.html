@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Contact Messages</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #0a0a0a;
+            color: #ffffff;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #20b2aa;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .message-card {
+            background: rgba(26, 26, 26, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 20px;
+            backdrop-filter: blur(10px);
+        }
+        .message-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .message-name {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #20b2aa;
+        }
+        .message-email {
+            color: #e0e0e0;
+        }
+        .message-date {
+            color: #a0a0a0;
+            font-size: 0.9rem;
+        }
+        .message-content {
+            background: rgba(10, 10, 10, 0.5);
+            padding: 15px;
+            border-radius: 8px;
+            white-space: pre-wrap;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #20b2aa;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="/" class="back-link">← Back to Portfolio</a>
+        <h1>Contact Messages</h1>
+        
+        {% for message in messages %}
+        <div class="message-card">
+            <div class="message-header">
+                <div>
+                    <div class="message-name">{{ message.name }}</div>
+                    <div class="message-email">{{ message.email }}</div>
+                </div>
+                <div class="message-date">{{ message.created_at.strftime('%Y-%m-%d %H:%M') }}</div>
+            </div>
+            <div class="message-content">{{ message.message }}</div>
+        </div>
+        {% endfor %}
+        
+        {% if not messages %}
+        <p style="text-align: center; color: #a0a0a0;">No messages yet.</p>
+        {% endif %}
+    </div>
+</body>
+</html>
